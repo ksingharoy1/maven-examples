@@ -18,7 +18,7 @@ node {
     withSonarQubeEnv(credentialsId: 'sonar-jaquar') {
         withMaven(jdk: 'JDK-1.8', maven: 'Maven-3.6.1') {
           sh 'mvn sonar:sonar \
-          -Dsonar.projectKey=maven-example-jaquar ,
+          -Dsonar.projectKey=maven-example-jaquar'
          
            
        }
